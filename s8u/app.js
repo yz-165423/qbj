@@ -6,13 +6,13 @@ const session = require("express-session");
 //配置第三方模块
 //配置连接池
 var pool = mysql.createPool({
-  host: "w.rdc.sae.sina.com.cn",
-  user: "m32ny1o3kw",
-  password: "h20hwil3l22yk320y25wy1x5xjywx231zjhkm53z",
+  host: "127.0.0.1",
+  user: "root",
+  password: "",
   port: 3306,
-  database: "app_qbjtest",
+  database: "xm",
   connectionLimit: 15
-  });
+});
 //跨域
 var server = express();
 server.use(cors({
